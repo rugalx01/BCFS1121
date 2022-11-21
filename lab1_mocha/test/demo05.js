@@ -14,5 +14,5 @@ describe("陣列的操作", () => {
 
     it("應該要有長度",()=>{
         assert.lengthOf(numbers, 5, "array應該要有五個元件")
-    })
+    }) 
 })
