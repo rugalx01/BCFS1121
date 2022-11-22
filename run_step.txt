@@ -12,3 +12,7 @@ Day2 操作重點
 ## 重新啟動 truffle [truffle --develop]
 
 ## 刷新內容 deploy --reset  (一開始這邊會出現錯誤，因為編譯的版本不依樣，所以要去 truffle-config.js 找到 compilers->solc->version 把內容改成對應的版本號 version: "0.5.17") 再重新去執行 deploy --reset 就會完成了
+
+## 建立非同步交易 demo03.js 主要是要把 truffle 建立出來的 [合約].json 讀取近來使用，還有取得自建服務器的 id 跟 network-address
+
+
