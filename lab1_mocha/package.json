@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --timeout 15000"
+    "test": "mocha --timeout 15000",
+    "test:browser": "live-server --port=9000 --mount=/:public"
   },
   "keywords": [],
   "author": "",
