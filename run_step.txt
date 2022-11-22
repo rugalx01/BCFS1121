@@ -1,0 +1,14 @@
+Day2 操作重點
+## 安裝 solidity 的時候要注意是選擇 Juan Blanco 作者的版本
+
+## 使用 solidity 0.5.16 但是編譯器會出現紅字，此時在紅線上使用滑鼠右鍵，選擇 change globol compiler version(remote) 切換到0.5.17的版本就會變正常了(預設安裝的版本會是比較高的版本，exapmle是 v8.x)
+
+## 使用 truffle 建立 migrations ，用power shell 去執行 truffle create migration SecretNumber但是會出錯，所以要先變更 power shell的設定，使用管理者打開power shell 然後輸入 Set-ExecutionPolicy -ExecutionPolicy Unrestricted 在選擇A ，完成之後在重新下一次 truffle create migration 就會在 migrations 目錄之下看到檔案。
+
+## 再去變更 migration 檔案的內容
+
+## 變更檔案名稱為 1_secret_number.js
+
+## 重新啟動 truffle [truffle --develop]
+
+## 刷新內容 deploy --reset  (一開始這邊會出現錯誤，因為編譯的版本不依樣，所以要去 truffle-config.js 找到 compilers->solc->version 把內容改成對應的版本號 version: "0.5.17") 再重新去執行 deploy --reset 就會完成了
