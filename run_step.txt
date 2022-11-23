@@ -40,3 +40,8 @@
 ## 每次金額異動都會有gas(手續費的產生，會先扣除手續費在做金額轉帳，都會從 from 那一方做扣除，如果gas不足就無法交易 )
 ## 交易的金額部分可以使用工具去做產出，避免手動輸入上面的錯誤發生。
 ## demo09_1 帳戶對帳戶之間的轉換，就不需要另外取得合約(address)。單存就是兩個帳戶的帳號就可以做轉帳
+
+## 合約事件 EventGenerate.sol
+## 建立 migration [truffle create migration EventGenerate]
+## 編輯 產生出來的 EventGenerate.js ，編輯內容請看 .\migrations\3_EventGenerate.js
+## 重新編譯 truffle 的 migrations [migrate --reset]
