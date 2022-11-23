@@ -13,8 +13,8 @@ const Web3 = require("web3");
         .send({ from: addresses[0] })
     console.log("目前的block number是", receipt.blockNumber)
     // use filter to find data
-    const result = await eventGenerate1.getPastEvents("NotifyEvent",
-        { filter: { id: 4 }, fromBlock: 0 })
-    console.log("一次取得多筆一點的event", result)
+    // const result = await eventGenerate1.getPastEvents("NotifyEvent",
+    //     { filter: { id: 4 }, fromBlock: 0 })
+    // console.log("一次取得多筆一點的event", result)
 
 })().catch(e => { console.log("oops, error=", e) })

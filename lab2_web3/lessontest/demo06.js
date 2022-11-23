@@ -1,4 +1,5 @@
 // event 結構
+// 這邊不會停止也會因為她會繼續監聽事件的發生
 const Web3 = require("web3");
 
 (async () => {
@@ -29,8 +30,8 @@ const Web3 = require("web3");
         .on("confirmation", (number) => {
             console.log("confirmation=", number)
             // console.log("receipt=", receipt)
-            console.log('the job is end force exit!!')
-            process.exit(1);
+            // console.log('the job is end force exit!!')
+            // process.exit(1);
         })
         .on("error", (error, receipt) => {
             console.log("error as:", error)
