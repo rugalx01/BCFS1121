@@ -48,3 +48,19 @@
 ## demo13, demo14 事件處理可以使用 notifyEvent (只能用在 websocket的模式下)，或是可以回去參考demo06的方式也是有監聽的效果
 ## demo14 最後是改成 監聽之後再送出事件也是可以正常動作的
 
+## 錢包教學 
+## 下載metamask 到 chrome當中 (他是網頁擴充套件)
+## 密碼跟助記辭都要記下 (助記辭比較重要)
+
+## 錢包 測試網絡 
+## 1. https://faucet.sepolia.dev/ 註冊、貼上自己 metamask 的位置(在錢包主頁面帳號的下面) 申請 (這個比較慢一點)
+## 2. https://goerlifaucet.com/   註冊、貼上自己 metamask 的位置(在錢包主頁面帳號的下面) 申請 (這個30秒左右就會有了)
+## 3. https://sepoliafaucet.net/  要使用推特分享才能要到 (這個跟第1個是一樣的不過用推特貼文比較快)
+## 上述都可以去要到錢(測試用的)
+## https://app.infura.io/ 註冊這個網站之後要連動到錢包要使用到的
+## 安裝錢包操作套件 npm install @truffle/hdwallet-provider
+## 在metamaks當中找出自己的公私鑰  公鑰在主要帳號下面的地址 私鑰 在帳戶詳情(在帳號右邊的三點區)當中 (可以去看Day3的截圖)
+## 建立 demo15.js 準備使用錢包 (請看code)
+## 交易紀錄查詢 Etherscan [主要公開網路] (如果是測試網路請查詢的時候後面加上自己使用的幣別 goerli 就查 Etherscan goerli, sepolia 就使用 Etherscan sepolia)
+## 查詢的時候貼上自己的帳戶 address 就可以做查詢
+## demo16 從交易合約上面反查詢
