@@ -1,4 +1,4 @@
-Day2 操作重點
+## Day2 
 ## 安裝 solidity 的時候要注意是選擇 Juan Blanco 作者的版本
 
 ## 使用 solidity 0.5.16 但是編譯器會出現紅字，此時在紅線上使用滑鼠右鍵，選擇 change globol compiler version(remote) 切換到0.5.17的版本就會變正常了(預設安裝的版本會是比較高的版本，exapmle是 v8.x)
@@ -15,4 +15,28 @@ Day2 操作重點
 
 ## 建立非同步交易 demo03.js 主要是要把 truffle 建立出來的 [合約].json 讀取近來使用，還有取得自建服務器的 id 跟 network-address
 
+## 1個Ether 是10的18次方 1000000000000000000 [1 +* 18個0]
 
+## 關於payable流程 (有關 Ether 的數值變動功能)
+
+## 建立一個新的 Contracts  名稱是 SecretNumber.sol ,編輯內容
+
+## 新建一個 migrations 在 truffle develop 執行 truffle create migration EtherTransfer 去建立出來
+
+## 更改名稱為 2_ether_transfer.js，並編輯器內容
+
+## 回到truffle develop去執行  migrate --reset 重新編譯出來新的 migrations 並且讓系統加載進去 會看到 > Total deployments:   2 (從原本的1變成2 多了一個)
+
+## 準備範例8的製作
+
+=================================================================
+## Day 3
+
+## call()只做讀取不修改、send()才會有修改。兩者都會有Event的狀態可以做確認。
+## 伺服器啟動流程 1.先啟動server [truffle develop] 2.重新編譯 [deploy --reset] 3.測試連線 [node 某一個測試這邊是用demo08]
+
+## 查詢帳戶餘額  web3.eth.getBalance(accounts[0])
+## 查詢地址餘額  web3.eth.getBalance("YOUR_ADDRESS_FOR_THAT_CONTRACT")，地址可以用  const addresses = await web3.eth.getAccounts(); 取得
+## 每次金額異動都會有gas(手續費的產生，會先扣除手續費在做金額轉帳，都會從 from 那一方做扣除，如果gas不足就無法交易 )
+## 交易的金額部分可以使用工具去做產出，避免手動輸入上面的錯誤發生。
+## demo09_1 帳戶對帳戶之間的轉換，就不需要另外取得合約(address)。單存就是兩個帳戶的帳號就可以做轉帳
