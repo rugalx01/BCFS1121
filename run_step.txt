@@ -64,3 +64,9 @@
 ## 交易紀錄查詢 Etherscan [主要公開網路] (如果是測試網路請查詢的時候後面加上自己使用的幣別 goerli 就查 Etherscan goerli, sepolia 就使用 Etherscan sepolia)
 ## 查詢的時候貼上自己的帳戶 address 就可以做查詢
 ## demo16 從交易合約上面反查詢
+
+## lab3_metamask : 使用 [npx create-react-app] lab3_metamask 建立測試專案
+
+
+
+
