@@ -91,6 +91,7 @@ day4
 
 -- lab4
 ## 重新建立一個新的 lab4_web3 的專案 (單純使用html去取得 基本資訊，跟合約無關的步驟)
-
+## ganache-gui 有按下Save的時候會給出一個名稱，用以繼續不然在下次Quick-start的時候就會變成一個全新的服務了，之前的就會不見
+## DAPP 表準流程 1.npx create-react-app lab5_react 2.cd lab5_react 3.truffle init -y 4.code .
 
 
