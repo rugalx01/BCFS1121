@@ -78,3 +78,10 @@ day4
 ## 安裝 truffle 之後，打開 truffle-config.js 找到  module.exports 的範圍 增加一行 contracts_build_directory:"./src/contracts", 來指定 contracts的建立路徑
 ## 安裝 web3 的函式庫
 
+## 建立 contracts [SecretNumber.sol] 在建立兩個 function set/get
+
+## 在src目錄下: 建立出 getMyWeb3.js 編輯內容，主要是需要做各種瀏覽器能支援不同的錢包處理方式去做不同的處理方式
+
+## 啟動 ganache, truffle 然後，打開 development, 再執行 truffle console --network development 與 migrate --reset [如果看到編譯有問題的話記得要去修改 compilers 的版本，再重新執行一次 migrate --reset 就會正常了]
+## 完成上述指令之後要去確認 ./src/contracts 之下的 SecretNumber.json 有沒有辦產生出來
+## 如果專案會有出現 sourcempa 的相關錯誤或是告警的時候，可以在專案下建立一個 .env的檔案，然後輸入 GENERATE_SOURCEMAP=false 再重新執行專案，就可以略過這一個部份了。
