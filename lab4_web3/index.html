@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <script src="node_modules/web3/dist/web3.min.js"></script>
+    </head>
+    <body>
+        <h1>檢查log裡的web3連線</h1>
+        
+        <!-- <script src="" async defer> -->
+        <script async defer>
+        if (typeof window.ethereum !== 'undefined') {
+            console.log("metamask found")
+            
+            getinfo()
+        } else {
+            window.alert("please install metamask")
+        }
+        async function getinfo() {
+            const web3 = new Web3(window.ethereum);
+            const netId = await web3.eth.net.getId();
+            console.log("net id=", netId);
+            const accounts = await web3.eth.requestAccounts();
+            console.log(accounts[0])
+            const balance = await web3.eth.getBalance(accounts[0])
+            console.log("balance=", balance)
+        }
+        </script>
+            console.log("check web3 connection")
+        </script>
+    </body>
+</html>
