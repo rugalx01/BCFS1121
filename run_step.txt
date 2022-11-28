@@ -85,3 +85,12 @@ day4
 ## 啟動 ganache, truffle 然後，打開 development, 再執行 truffle console --network development 與 migrate --reset [如果看到編譯有問題的話記得要去修改 compilers 的版本，再重新執行一次 migrate --reset 就會正常了]
 ## 完成上述指令之後要去確認 ./src/contracts 之下的 SecretNumber.json 有沒有辦產生出來
 ## 如果專案會有出現 sourcempa 的相關錯誤或是告警的時候，可以在專案下建立一個 .env的檔案，然後輸入 GENERATE_SOURCEMAP=false 再重新執行專案，就可以略過這一個部份了。
+
+-- 使用 ganachi-gui
+## 要匯入帳號的話需要在每個帳號的最右邊的鎖時符號按下去才會出現私鑰 才能貼上做匯入
+
+-- lab4
+## 重新建立一個新的 lab4_web3 的專案
+
+
+
