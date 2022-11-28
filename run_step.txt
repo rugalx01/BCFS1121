@@ -67,6 +67,14 @@
 
 ## lab3_metamask : 使用 [npx create-react-app] lab3_metamask 建立測試專案
 
+=================================================================
+day4 
+
+## 使用 React 架構開發  詳細步驟可以參考 day4.txt
+## RCC : React Class Component
+## RFC : React Function Component
+## 在 index.js 當中如果app 被 [React.StrictMode] 的tag 包住的話，會進入嚴謹模式，程式碼會被做兩次
+
 
 
 
