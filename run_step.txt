@@ -75,6 +75,6 @@ day4
 ## RFC : React Function Component
 ## 在 index.js 當中如果app 被 [React.StrictMode] 的tag 包住的話，會進入嚴謹模式，程式碼會被做兩次
 
-
-
+## 安裝 truffle 之後，打開 truffle-config.js 找到  module.exports 的範圍 增加一行 contracts_build_directory:"./src/contracts", 來指定 contracts的建立路徑
+## 安裝 web3 的函式庫
 
