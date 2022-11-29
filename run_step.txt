@@ -153,3 +153,7 @@
     4.web3.eth.getBalance(accounts[1])
     5.web3.eth.getBalance(accounts[2])
 
+## 開始建立 drizzle 的起始模組 在 ./src/建立一個 drizzleOptions.js
+    把要使用的合約(可以放多個)跟web3都放到這個物件當中，作為管理與使用
+
+## 把drizzle加入到 app.js 當中
