@@ -173,3 +173,12 @@
 ## 安裝 npm install react-toastify
 ## 在 options 當中增加 events 的部分才能收的到 DataChanged 的事件流程
 ## 測試在app當中使用 加入了 toasfiy 的部分做測試，把事件在畫面上做通知顯示
+
+
+-- ERC 20 的教學
+## 初始化專案 npm init -y
+## 安裝免費版本的合約模組 npm install @openzeppelin/contracts
+    truffle init -y
+    npm install chai chai-as-promised
+    npm install @truffle/hdwallet-provider
+## 以上完成環境配置
