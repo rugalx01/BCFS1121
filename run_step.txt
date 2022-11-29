@@ -125,6 +125,11 @@
 
 -- drizzle
 ## 專案的資料管理
+## 使用CRA創建lab6  npx create-react-app lab6_react_drizzle
+## 安裝使用套件
+npm install @drizzle/store
+npm install @drizzle/react-plugin
+npm install @drizzle/react-components  
 
 
 
