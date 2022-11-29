@@ -127,10 +127,14 @@
 ## 專案的資料管理
 ## 使用CRA創建lab6  npx create-react-app lab6_react_drizzle
 ## 安裝使用套件
-npm install @drizzle/store
-npm install @drizzle/react-plugin
-npm install @drizzle/react-components  
+    npm install @drizzle/store
+    npm install @drizzle/react-plugin
+    npm install @drizzle/react-components
 
+## 建立 truffle [truffle init]
+    調整 truffle 的編譯版本到 0.5.17
+
+## 開始建立使用 react+drizzle 範例 
 
 
 
