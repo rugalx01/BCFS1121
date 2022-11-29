@@ -172,4 +172,4 @@
 -- drizzle 的事件呼叫
 ## 安裝 npm install react-toastify
 ## 在 options 當中增加 events 的部分才能收的到 DataChanged 的事件流程
-##
+## 測試在app當中使用 加入了 toasfiy 的部分做測試
