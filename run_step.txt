@@ -167,3 +167,9 @@
 ## 建立 ./src/components/MyComponent.js ，並且在裡面建立 newContextComponents 的功能模組，可以在這邊把 props 印出來看到 所有區塊鏈要用的參數都在裡面了。減少自己去存取的部分。
 ## 把 MyComponent 加入到 app.js
 ## 練習在 MyComponent.js 當中操作區塊鏈的行為與互動
+
+
+-- drizzle 的事件呼叫
+## 安裝 npm install react-toastify
+## 在 options 當中增加 events 的部分才能收的到 DataChanged 的事件流程
+##
