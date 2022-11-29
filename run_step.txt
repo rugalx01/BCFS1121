@@ -1,3 +1,4 @@
+=================================================================
 ## Day2 
 ## 安裝 solidity 的時候要注意是選擇 Juan Blanco 作者的版本
 
@@ -68,7 +69,7 @@
 ## lab3_metamask : 使用 [npx create-react-app] lab3_metamask 建立測試專案
 
 =================================================================
-day4 
+## day4 
 
 ## 使用 React 架構開發  詳細步驟可以參考 day4.txt
 ## RCC : React Class Component
@@ -89,9 +90,39 @@ day4
 -- 使用 ganachi-gui
 ## 要匯入帳號的話需要在每個帳號的最右邊的鎖時符號按下去才會出現私鑰 才能貼上做匯入
 
--- lab4
+-- lab4 
 ## 重新建立一個新的 lab4_web3 的專案 (單純使用html去取得 基本資訊，跟合約無關的步驟)
 ## ganache-gui 有按下Save的時候會給出一個名稱，用以繼續不然在下次Quick-start的時候就會變成一個全新的服務了，之前的就會不見
-## DAPP 表準流程 1.npx create-react-app lab5_react 2.cd lab5_react 3.truffle init -y 4.code .
+-- lab5
+## DABB 表準流程 
+## 1.npx create-react-app lab5_react 
+## 2.cd lab5_react 
+## 3.truffle init -y 
+## 4.開始建立程式碼
+## 建立 xxx.sol，變更truffle-config.js 的 pragma 編譯版本到 0.5.17
+## 建立 1_deploy_xxx.js 用來做部屬配置
+## 設定 truffle-config.js 找到 module.exports 的 tag 增加一組參數 contracts_build_directory:"./src/sol",
+## 設定 truffle-config.js 找到 development: 打開註解然後設定 port 到我們要用的 ganache-gui的port號 [之後要看實際要使用的服務 ip/port 來做設定]
+## 專案設定:在 ganachi-gui 右上的螺絲符號按下去把專案加入(找到專案下的 truffle-config.js 檔案) 就可以同步顯示到 ganache-gui 當中了
+## 執行 truffle compile 就會看到 設定的編譯路徑當中產生 xxx.json 檔案了
+## 執行 truffle deploy 來做部屬  (完成之後應該要能夠在 ganache-gui 看到自己建立的 contract )
+## 啟動前端伺服器 npm start
+## ※、RCC 可以只變動一個參數
+## ※、RFC 每次變動都是要整個[Object]一起異動，不然沒有異動到的部分會顯示不出來
+
+=================================================================
+## day5
+
+## 每次專案重新啟動的步驟
+1. ganache gui啟動
+2. 打開metamask
+3. cd lab5_react
+4. npm install
+5. npm start
+
+## 如果再 ganache-gui 當中沒有看到合約出現可以重新佈署或是確認專案是否有設定同步 [請看Day4的專案設定]，如果設定好沒有的話就在重新佈署一次 [truffle deploy] 
+
+
+
 
 
