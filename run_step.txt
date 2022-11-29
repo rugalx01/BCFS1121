@@ -156,4 +156,14 @@
 ## 開始建立 drizzle 的起始模組 在 ./src/建立一個 drizzleOptions.js
     把要使用的合約(可以放多個)跟web3都放到這個物件當中，作為管理與使用
 
+
+## 安裝 chorme套件 redux  [https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=zh-TW]
+    方便後續觀看開發的流程
 ## 把drizzle加入到 app.js 當中
+
+## 設定錢包(metamask)連線到 truffle-cli 9545 手動設定進去(去網路列表最下面那邊做手動新增)
+## 匯入帳號 可以在 truffle 的啟動那邊找到 Private Keys: 貼一組進去
+## 建立 ./src/components/infoContainer.js ，並且在裡面建立 drizzleConnect 的功能模組
+## 建立 ./src/components/MyComponent.js ，並且在裡面建立 newContextComponents 的功能模組，可以在這邊把 props 印出來看到 所有區塊鏈要用的參數都在裡面了。減少自己去存取的部分。
+## 把 MyComponent 加入到 app.js
+## 練習在 MyComponent.js 當中操作區塊鏈的行為與互動
