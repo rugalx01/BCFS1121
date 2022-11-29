@@ -182,3 +182,45 @@
     npm install chai chai-as-promised
     npm install @truffle/hdwallet-provider
 ## 以上完成環境配置
+## 確認 module->@openzeppelin->token 下要有下列四個 ERC20, ERC721, ERC777, ERC1155 的套件模組
+## 新開視窗 ctrl+K, ctrl+O，選擇Lab7_ERC20
+## 設定專案編譯 solidity 編譯的版本，首先在 contracts 之下建立 PSToken.sol
+    輸入 pragma solidity ^0.8.0; (這邊滑鼠右鍵選擇把工作環境的編譯設定成0.8.0) --> solidity:change workspeace compile version
+    再去設定.vscode的(找不到檔案的話可以搜尋下列內容的前端關鍵字)、要有先做前一步驟才會看的到這個 settings.json 的檔案
+    settings.json
+    {
+        "solidity.compileUsingRemoteVersion": "v0.8.17+commit.8df45f5f"
+    }
+
+## 建立管理員的合約，只有管理員才能發行貨幣，在PSToken.js當中
+## 完成之後 truffle compile 看看有沒有錯誤，再去 build\contracts\找看看 PSToken.json、並檢查 "abi" , "bytecode" 是否都有正常出現
+## 建立新的 migrations\1_pstoken.js 建立剛剛的內容
+## 啟動一個新的 ganache-gui 選一個新的服務(quick-start)，然後再專案設定裡面把剛剛的lab7的 truffle-config.js 加入到 ganache-gui 的專案管控之下
+## truffle migrate 部屬到 專案當中，可以用 ganachi-gui 看到有部屬上去了
+## 建立出PSToken的 使用變數
+    truffle console
+    let PSToken = await PSToken.deployed()
+    完成之後可以使用下列指令做測試
+    PSToken
+    PSToken.address
+    PSToken.name()
+    PSToken.symbol()
+    PSToken.totalSupply()
+    accounts
+    餘額查詢    PSToken.balanceOf(accounts[0])
+    代幣發行    PSToken.mint(accounts[0], web3.utils.toWei('5'))
+## 因為這邊要重新做一次設定發幣的管理員所以要先回去修改 PSToken.sol 下的 constructor，修改完成之後需要重新啟動 truffle console
+    quit console 
+    重新進入    truffle console
+    重新佈署    deploy --reset
+
+## 再重新操作一次
+let token1 = await PSToken.deployed()
+token1.minter()
+accounts[0]
+token1.mint(accounts[0], web3.utils.toWei('5'))
+token1.balanceOf(accounts[0])
+
+## 以上就是完成發幣的流程
+
+
