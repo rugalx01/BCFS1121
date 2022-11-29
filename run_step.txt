@@ -131,10 +131,25 @@
     npm install @drizzle/react-plugin
     npm install @drizzle/react-components
 
-## 建立 truffle [truffle init]
-    調整 truffle 的編譯版本到 0.5.17
+## 建立 truffle [truffle init]，並設定 truffle-config.js
+    1. 找到 compilers 的編譯版本到 0.5.17
+    2. 打開 compilers下的 optimizer
+    3. 找到 module.exports 增加路徑 contracts_build_directory: "./src/Contracts"
+    4. networks->development 打開這個 並把 port號碼改成 9545
 
 ## 開始建立使用 react+drizzle 範例 
 
+## 建立 ./contract/Storeage.sol ，增加 set/get/event (比平常多一個event)
+## 建立 migrations [truffle create migration Storage], 並變更其名稱 (把前面的數字改成1不用那麼長的數字)
+## 設定 truffle-config.js 的編譯路徑還有打開 development tag 再把他的port號碼改成 9545
 
+## 啟動 truffleｍ與配置合約
+    1.truffle develop
+    2.migrate --reset
+## 測試指令 (裡面已經有包含 web3 所以也可以在裡面直接操作查詢餘額的動作)
+    1.accounts
+    2.accounts[0]
+    3.web3.eth.getBalance(accounts[0])
+    4.web3.eth.getBalance(accounts[1])
+    5.web3.eth.getBalance(accounts[2])
 
